@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-//import {Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Form, Button } from 'react-bootstrap';
 
@@ -24,13 +24,13 @@ class Profile extends Component {
   }
   render() {
     // TODO: use to redirect to home page if user not logged in
-    // if (this.props.user == null) {
-    //   return (
-    //     <Redirect to={{
-    //       pathname: '/home',
-    //     }} />
-    //   )
-    // }
+    if (this.props.user == null) {
+      return (
+        <Redirect to={{
+          pathname: '/home',
+        }} />
+      )
+    }
     return (
       // <Container className="mt-5">
       
