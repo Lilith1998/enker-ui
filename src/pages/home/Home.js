@@ -12,6 +12,7 @@ export default () => (
       <p className={"display-4 text-black font-weight-bold"}>
         Click <Link to="/login"><span className="text-primary">here</span></Link> to start <span className="bg-light">connecting</span>
       </p>
+      <div></div>
     </div>
   </div>
 );

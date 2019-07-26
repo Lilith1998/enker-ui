@@ -27,7 +27,7 @@ class Profile extends Component {
     if (this.props.user == null) {
       return (
         <Redirect to={{
-          pathname: '/home',
+          pathname: '/login',
         }} />
       )
     }
